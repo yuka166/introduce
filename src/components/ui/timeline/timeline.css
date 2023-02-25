@@ -1,0 +1,55 @@
+.timeline-wrap {
+    display: flex;
+}
+
+.timeline-event {
+    width: 100%;
+}
+
+.timeline-event>.time-mark {
+    display: flex;
+}
+
+.timeline-event>.time-mark>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.timeline-event>.time-mark>div {
+    width: 50%;
+    position: relative;
+}
+
+.timeline-event>.time-mark>div::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.timeline-event>.time-mark>div>.timeline-year {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    height: 75%;
+}
+
+.timeline-border {
+    width: 50%;
+    border: 1px solid white;
+    height: 1px;
+    margin: auto auto;
+}
+
+.timeline-event>.desc {
+    width: 50%;
+    margin: 0 20px;
+}
