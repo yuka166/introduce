@@ -97,8 +97,8 @@ function App() {
   }, [count, text]);
 
   useEffect(() => {
-    document.title = text;
-  }, [text]);
+    document.title = 'Yuka166';
+  }, []);
 
   useEffect(() => {
     ScrollReveal().reveal('.skill-list>div', slideUp);
@@ -110,7 +110,7 @@ function App() {
       <div className="first-word">
         <h1 className="title">{text}</h1>
         <div className="primary-desc">
-          <div>A Front-End Developer whos loves to create beautiful, creative website.</div>
+          <div>A Front-End Developer who loves to create beautiful, creative websites.</div>
           <div>Aiming to be a Full-Stack Developer in the future.</div>
         </div>
         <div className="godown-btn"><button type='button' aria-label='Go down' onClick={ScrollDown}><FontAwesomeIcon icon={faAngleDoubleDown} /></button></div>
