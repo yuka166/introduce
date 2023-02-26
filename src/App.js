@@ -113,7 +113,7 @@ function App() {
           <div>A Front-End Developer whos loves to create beautiful, creative website.</div>
           <div>Aiming to be a Full-Stack Developer in the future.</div>
         </div>
-        <div className="godown-btn"><button type='button' onClick={ScrollDown}><FontAwesomeIcon icon={faAngleDoubleDown} /></button></div>
+        <div className="godown-btn"><button type='button' aria-label='Go down' onClick={ScrollDown}><FontAwesomeIcon icon={faAngleDoubleDown} /></button></div>
       </div>
       <div className="programming-language">
         <div className="title">My skill</div>
@@ -151,10 +151,10 @@ function App() {
           <div className='social-text'>Email: hoangdat1606@gmail.com</div>
           <div className='social-icon'>
             <div>
-              <a href='https://www.facebook.com/izumi326/' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faFacebook} /></a>
+              <a href='https://www.facebook.com/izumi326/' target='_blank' rel='noreferrer' aria-label='My Facebook link'><FontAwesomeIcon icon={faFacebook} /></a>
             </div>
             <div>
-              <a href='https://github.com/yuka166/' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
+              <a href='https://github.com/yuka166/' target='_blank' rel='noreferrer' aria-label='My Github link'><FontAwesomeIcon icon={faGithub} /></a>
             </div>
           </div>
         </div>
