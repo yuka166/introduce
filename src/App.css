@@ -8,7 +8,7 @@
 }
 
 .title {
-    font-size: 50px;
+    font-size: 3em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -29,9 +29,23 @@
     padding: 0 20px;
 }
 
-@media screen and (max-width: 600px) {
-    .primary-desc>div {
-        text-align: left;
+@media screen and (max-width: 660px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .primary-desc {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 1.7em;
+    }
+
+    .primary-desc {
+        font-size: 8px;
     }
 }
 
@@ -43,6 +57,11 @@
     content: "";
     border-right: 1px solid white;
     animation: var(--typing-animation);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    height: 80%;
 }
 
 @keyframes typingcursor {
@@ -57,21 +76,21 @@
 
 .godown-btn {
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     animation: bouncing 2s ease infinite;
 }
 
 @keyframes bouncing {
     0% {
-        bottom: 5%;
+        bottom: 7%;
     }
 
     50% {
-        bottom: 8%;
+        bottom: 10%;
     }
 
     100% {
-        bottom: 5%;
+        bottom: 7%;
     }
 }
 
