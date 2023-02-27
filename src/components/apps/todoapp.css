@@ -52,6 +52,7 @@
 
 .todo-list>div>.todo-things>.thing-name {
     width: 70%;
+    overflow-wrap: break-word;
 }
 
 .todo-list>div>.todo-things>.thing-button {
