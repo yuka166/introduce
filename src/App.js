@@ -101,7 +101,6 @@ function App() {
   useEffect(() => {
     ScrollReveal().reveal('.skill-list>div', slideUp);
     ScrollReveal().reveal('.primary-desc>div', { ...slideUp, delay: txt.length * 100 });
-    document.title = 'Yuka166';
   }, []);
 
   return (
