@@ -1,0 +1,60 @@
+.todo-main {
+    border-right: 1px solid white;
+}
+
+.todo-list {
+    margin-top: 10px;
+    padding: 20px;
+    /* border-radius: 10px; */
+    background-color: #222222;
+    position: relative;
+}
+
+.todo-list>div>.todo-things {
+    display: flex;
+    border-bottom: 1px solid white;
+    margin: 10px 0;
+}
+
+.todo-input>div,
+.todo-removeall {
+    height: 30px;
+    margin: 5px 0;
+}
+
+.todo-input>div>input {
+    width: 80%;
+    background-color: #303030;
+    padding: 0 10px;
+}
+
+.todo-input>div>button {
+    width: 20%;
+    background-color: #222222;
+}
+
+.todo-input>div>button:hover {
+    background-color: #1d1d1d;
+}
+
+.todo-input>div>input,
+.todo-input>div>button,
+.todo-removeall>button {
+    height: 100%;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+
+.todo-removeall>button {
+    background-color: #ff3535;
+}
+
+.todo-list>div>.todo-things>.thing-name {
+    width: 70%;
+}
+
+.todo-list>div>.todo-things>.thing-button {
+    width: 30%;
+    text-align: right;
+}
