@@ -6,10 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown, faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ScrollReveal from 'scrollreveal'
+import Title from './components/ui/title/title';
 import Skill from './components/ui/skill/skill';
 import SkillArr from './data/skilldata'
 import Timeline from './components/ui/timeline/timeline';
-import TimelineArr from './data/timelinedata'
+import TimelineArr from './data/timelinedata';
+import ToDoApp from './components/apps/todoapp';
 import './App.css';
 
 function TimelineBorder() {
@@ -82,27 +84,24 @@ function App() {
   }
 
   const txt = "Hello, I'm Dat!";
-  const [text, textChange] = useState("");
-  const [count, countChange] = useState(0);
+  const [text, setText] = useState("");
+  const [count, setCount] = useState(0);
 
   document.documentElement.style.setProperty("--typing-animation", "typingcursor 1s linear " + (txt.length * 100) + "ms infinite");
 
   useEffect(() => {
     if (count < txt.length) {
       setTimeout(() => {
-        textChange(text + txt.charAt(count));
-        countChange(count + 1);
+        setText(text + txt.charAt(count));
+        setCount(count + 1);
       }, 100)
     }
   }, [count, text]);
 
   useEffect(() => {
-    document.title = 'Yuka166';
-  }, []);
-
-  useEffect(() => {
     ScrollReveal().reveal('.skill-list>div', slideUp);
     ScrollReveal().reveal('.primary-desc>div', { ...slideUp, delay: txt.length * 100 });
+    document.title = 'Yuka166';
   }, []);
 
   return (
@@ -116,8 +115,7 @@ function App() {
         <div className="godown-btn"><button type='button' aria-label='Go down' onClick={ScrollDown}><FontAwesomeIcon icon={faAngleDoubleDown} /></button></div>
       </div>
       <div className="programming-language">
-        <div className="title">My skill</div>
-        <div className='title-border'></div>
+        <Title chilren={"My skill"} />
         <div className="skill-list">
           {SkillArr.map((skill) => {
             return (
@@ -127,8 +125,7 @@ function App() {
         </div>
       </div>
       <div className="timeline">
-        <div className="title">Timeline</div>
-        <div className='title-border'></div>
+        <Title chilren={"Timeline"} />
         <Slider {...settings} className="timeline-list">
           {TimelineArr.map((timeline) => {
             if (timeline.id !== TimelineArr.length) {
@@ -144,9 +141,18 @@ function App() {
           })}
         </Slider>
       </div>
+      <div className="playground">
+        <Title chilren={"Playground"} />
+        <div className="playground-list">
+          <ToDoApp />
+          <div className="countdown">
+            <div className="sub-title">Countdown machine</div>
+            <div></div>
+          </div>
+        </div>
+      </div>
       <div className="contact">
-        <div className='title'>Contact me</div>
-        <div className='title-border'></div>
+        <Title chilren={"Contact me"} />
         <div className='social'>
           <div className='social-text'>Email: hoangdat1606@gmail.com</div>
           <div className='social-icon'>
