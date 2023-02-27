@@ -7,31 +7,12 @@
     position: relative;
 }
 
-.title {
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 10px;
-    letter-spacing: 3px;
-}
-
-.title-border {
-    border: 1px solid white;
-    height: 1px;
-    width: 100px;
-    margin: 0 auto;
-}
-
 .primary-desc {
     font-size: 20px;
     text-align: center;
 }
 
 @media screen and (max-width: 660px) {
-    .title {
-        font-size: 2em;
-    }
 
     .primary-desc {
         font-size: 12px;
@@ -39,9 +20,6 @@
 }
 
 @media screen and (max-width: 400px) {
-    .title {
-        font-size: 1.8em;
-    }
 
     .primary-desc {
         font-size: 10px;
@@ -157,7 +135,7 @@
 }
 
 .skill-css>.skill-point>div {
-    width: 70%;
+    width: 60%;
 }
 
 .skill-js>.skill-point>div {
@@ -185,6 +163,23 @@
     transform: translate(-50%, -50%); */
     width: 90%;
     margin: 20px auto;
+}
+
+.playground-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.playground-list>div {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 .contact {
