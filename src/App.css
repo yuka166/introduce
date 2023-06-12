@@ -131,23 +131,19 @@
 }
 
 .skill-html>.skill-point>div {
-    width: 80%;
+    width: 40%;
 }
 
 .skill-css>.skill-point>div {
-    width: 60%;
+    width: 30%;
 }
 
 .skill-js>.skill-point>div {
-    width: 50%;
+    width: 30%;
 }
 
 .skill-reactjs>.skill-point>div {
-    width: 30%;
-}
-
-.skill-cs>.skill-point>div {
-    width: 30%;
+    width: 10%;
 }
 
 /* .timeline {
