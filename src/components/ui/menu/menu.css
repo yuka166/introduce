@@ -1,0 +1,12 @@
+.menu {
+    position: fixed;
+    display: flex;
+    font-size: 1.3em;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, 0);
+}
+
+.menu>div {
+    margin: 0 15px;
+}
